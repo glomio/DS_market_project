@@ -1,7 +1,7 @@
 <h1>DSmarket<img src='ds_market.png' align='center' width = '100'></h1>
 
 # Self Organizing Maps
-----------------------
+
 This project consist on 4 parts working on the DS_MARKET data.
 
 - Business Analysis
@@ -10,7 +10,7 @@ This project consist on 4 parts working on the DS_MARKET data.
 - Store supply use case
 
 # Installation
---------------
+
 
 The project is stored in:
 
@@ -18,7 +18,7 @@ The project is stored in:
 
 
 # Requirements
---------------
+
 Python version 3.8
 
 All packages in the used environment are in the file:
@@ -36,7 +36,6 @@ To run the notebooks, it is first necessary to run the "dollar_value_table.ipynb
 * Pandas, sklearn, plotly and other package should be installed prior to running these notebooks
 
 # Part 2: Item clustering
----------------------
 
 The clustering part works on the item_sales.csv.
 The clustering part is aiming in identifying products that behave similarly.
