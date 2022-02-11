@@ -1,7 +1,7 @@
 
 <h1>DSmarket<img src='ds_market.png' align='center' width = '100'></h1>
 
-# Self Organizing Maps
+# Project DS Market
 
 This project consist on 4 parts working on the DS_MARKET data.
 
