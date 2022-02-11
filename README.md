@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h1>DSmarket<img src='ds_market.png' align='center' width = '100'></h1>
 
 # Self Organizing Maps
