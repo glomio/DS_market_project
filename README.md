@@ -81,7 +81,7 @@ Standard Product management cycles will be observed through to deployment and mo
 Standard Scrum management process will be deployed within the management of sprints.  
 Kanban boards will be used to manage tasks using tools such as Trello or java to manage backlog.
 
-<img src='./ds_market.png' align='center' width = '100'>
+<img src='./4_MLOps_plan/MLOps_use_case_diagram.png' align='center' width = '100'>
 
 Data sources input from SAP and Salesforce relating to sales, events and prices. 
 Data engineering and coding will be occurring through VS Studio
