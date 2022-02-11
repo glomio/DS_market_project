@@ -81,7 +81,7 @@ Standard Product management cycles will be observed through to deployment and mo
 Standard Scrum management process will be deployed within the management of sprints.  
 Kanban boards will be used to manage tasks using tools such as Trello or java to manage backlog.
 
-<img src='./4_MLOps_plan/MLOps_use_case_diagram.png' align='center' width = '100'>
+<img src='./4_MLOps_plan/MLOps_use_case_diagram.png' align='center' width = '500'>
 
 Data sources input from SAP and Salesforce relating to sales, events and prices. 
 Data engineering and coding will be occurring through VS Studio
@@ -94,3 +94,5 @@ This would lead back to SAP material Management to update stock
 Tableau will be used as dashboards to measure business evaluation KPIs
 Automated reports will be made available through outlook. Governance triggers will be also sent through Outlook and Slack. 
 Tabpy will be used to link VS Studio and Python if MLOps tool has limitations on Business reporting data
+
+<img src='./4_MLOps_plan/store_replanishment_workstream_MLOps.png' align='center' width = '500'>
