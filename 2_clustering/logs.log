@@ -336,3 +336,931 @@
 2022-02-11 12:26:53,083:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
        n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
        random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:49:14,954:INFO:PyCaret Supervised Module
+2022-02-11 12:49:14,955:INFO:ML Usecase: clustering
+2022-02-11 12:49:14,956:INFO:version 2.3.6
+2022-02-11 12:49:14,956:INFO:Initializing setup()
+2022-02-11 12:49:14,957:INFO:setup(target=None, ml_usecase=clustering, available_plots={'cluster': 'Cluster PCA Plot (2d)', 'tsne': 'Cluster TSnE (3d)', 'elbow': 'Elbow', 'silhouette': 'Silhouette', 'distance': 'Distance', 'distribution': 'Distribution'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=mode, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=['item', 'frequency', 'recency'], normalize=True, normalize_method=minmax, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=False, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=17, log_experiment=False, experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-02-11 12:49:14,958:INFO:Checking environment
+2022-02-11 12:49:14,958:INFO:python_version: 3.8.12
+2022-02-11 12:49:14,959:INFO:python_build: ('default', 'Oct 12 2021 03:01:40')
+2022-02-11 12:49:14,959:INFO:machine: AMD64
+2022-02-11 12:49:14,960:INFO:platform: Windows-10-10.0.18363-SP0
+2022-02-11 12:49:14,963:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging.
+2022-02-11 12:49:14,963:INFO:Checking libraries
+2022-02-11 12:49:14,963:INFO:pd==1.3.4
+2022-02-11 12:49:14,964:INFO:numpy==1.19.5
+2022-02-11 12:49:14,964:INFO:sklearn==0.23.2
+2022-02-11 12:49:14,965:INFO:lightgbm==3.3.2
+2022-02-11 12:49:14,967:WARNING:catboost not found
+2022-02-11 12:49:14,969:WARNING:xgboost not found
+2022-02-11 12:49:14,970:INFO:mlflow==1.23.0
+2022-02-11 12:49:14,970:INFO:Checking Exceptions
+2022-02-11 12:49:14,971:INFO:Declaring global variables
+2022-02-11 12:49:14,971:INFO:USI: 79ec
+2022-02-11 12:49:14,972:INFO:pycaret_globals: {'iterative_imputation_iters_param', 'imputation_regressor', 'fold_shuffle_param', 'html_param', 'master_model_container', 'fold_generator', '_internal_pipeline', 'fold_groups_param', '_all_metrics', 'fix_imbalance_method_param', 'display_container', 'log_plots_param', 'stratify_param', 'fix_imbalance_param', 'fold_groups_param_full', 'pycaret_globals', 'create_model_container', 'X', '_all_models_internal', 'exp_name_log', 'fold_param', 'transform_target_param', '_gpu_n_jobs_param', 'data_before_preprocess', '_all_models', 'imputation_classifier', 'prep_pipe', 'target_param', '_available_plots', 'logging_param', 'seed', 'gpu_param', 'experiment__', 'transform_target_method_param', 'n_jobs_param', '_ml_usecase', 'USI'}
+2022-02-11 12:49:14,972:INFO:Preparing display monitor
+2022-02-11 12:49:14,972:INFO:Preparing display monitor
+2022-02-11 12:49:14,983:INFO:Importing libraries
+2022-02-11 12:49:14,983:INFO:Copying data for preprocessing
+2022-02-11 12:49:14,991:INFO:Declaring preprocessing parameters
+2022-02-11 12:49:14,994:INFO:Creating preprocessing pipeline
+2022-02-11 12:49:14,999:INFO:Preprocessing pipeline created successfully
+2022-02-11 12:49:15,000:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-02-11 12:49:15,000:INFO:Creating global containers
+2022-02-11 12:49:15,002:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-02-11 12:49:16,810:INFO:Creating grid variables
+2022-02-11 12:49:16,825:INFO:create_model_container: 0
+2022-02-11 12:49:16,825:INFO:master_model_container: 0
+2022-02-11 12:49:16,825:INFO:display_container: 1
+2022-02-11 12:49:16,831:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-02-11 12:49:16,831:INFO:setup() succesfully completed......................................
+2022-02-11 12:49:16,993:INFO:Initializing create_model()
+2022-02-11 12:49:16,993:INFO:create_model(estimator=kmeans, num_clusters=5, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2022-02-11 12:49:16,994:INFO:Checking exceptions
+2022-02-11 12:49:16,994:INFO:Preparing display monitor
+2022-02-11 12:49:17,016:INFO:Importing libraries
+2022-02-11 12:49:17,026:INFO:Importing untrained model
+2022-02-11 12:49:17,034:INFO:K-Means Clustering Imported succesfully
+2022-02-11 12:49:17,046:INFO:Fitting Model
+2022-02-11 12:49:17,432:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 12:49:17,432:INFO:create_models() succesfully completed......................................
+2022-02-11 12:49:17,433:INFO:Uploading results into container
+2022-02-11 12:49:17,436:INFO:Uploading model into container now
+2022-02-11 12:49:17,443:INFO:create_model_container: 1
+2022-02-11 12:49:17,444:INFO:master_model_container: 1
+2022-02-11 12:49:17,444:INFO:display_container: 2
+2022-02-11 12:49:17,445:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 12:49:17,445:INFO:create_model() succesfully completed......................................
+2022-02-11 12:49:17,564:INFO:Initializing assign_model()
+2022-02-11 12:49:17,564:INFO:assign_model(model=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), transformation=False, score=True, verbose=True)
+2022-02-11 12:49:17,565:INFO:Checking exceptions
+2022-02-11 12:49:17,565:INFO:Determining Trained Model
+2022-02-11 12:49:17,566:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:49:17,566:INFO:Copying data
+2022-02-11 12:49:17,569:INFO:(2897, 6)
+2022-02-11 12:49:17,569:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:49:17,602:INFO:Initializing plot_model()
+2022-02-11 12:49:17,603:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=elbow, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:17,603:INFO:Checking exceptions
+2022-02-11 12:49:17,605:INFO:Preparing display monitor
+2022-02-11 12:49:17,613:INFO:Preloading libraries
+2022-02-11 12:49:17,615:INFO:Copying training dataset
+2022-02-11 12:49:17,616:INFO:Plot type: elbow
+2022-02-11 12:49:17,618:INFO:Fitting Model
+2022-02-11 12:49:20,023:INFO:Visual Rendered Successfully
+2022-02-11 12:49:20,152:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:20,182:INFO:Initializing plot_model()
+2022-02-11 12:49:20,183:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=silhouette, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:20,183:INFO:Checking exceptions
+2022-02-11 12:49:20,184:INFO:Preparing display monitor
+2022-02-11 12:49:20,193:INFO:Preloading libraries
+2022-02-11 12:49:20,194:INFO:Copying training dataset
+2022-02-11 12:49:20,195:INFO:Plot type: silhouette
+2022-02-11 12:49:20,197:INFO:Fitting Model
+2022-02-11 12:49:20,732:INFO:Visual Rendered Successfully
+2022-02-11 12:49:20,839:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:20,869:INFO:Initializing plot_model()
+2022-02-11 12:49:20,870:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=cluster, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:20,871:INFO:Checking exceptions
+2022-02-11 12:49:20,872:INFO:Preparing display monitor
+2022-02-11 12:49:20,880:INFO:Preloading libraries
+2022-02-11 12:49:20,882:INFO:Copying training dataset
+2022-02-11 12:49:20,883:INFO:Plot type: cluster
+2022-02-11 12:49:20,885:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:49:20,887:INFO:Initializing assign_model()
+2022-02-11 12:49:20,888:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=True, score=True, verbose=False)
+2022-02-11 12:49:20,889:INFO:Checking exceptions
+2022-02-11 12:49:20,889:INFO:Determining Trained Model
+2022-02-11 12:49:20,890:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:49:20,891:INFO:Copying data
+2022-02-11 12:49:20,891:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2022-02-11 12:49:20,894:INFO:(2897, 3)
+2022-02-11 12:49:20,895:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:49:20,895:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:49:20,899:INFO:Fitting PCA()
+2022-02-11 12:49:20,902:INFO:Sorting dataframe
+2022-02-11 12:49:20,908:INFO:Rendering Visual
+2022-02-11 12:49:21,014:INFO:Visual Rendered Successfully
+2022-02-11 12:49:21,122:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:21,269:INFO:Initializing plot_model()
+2022-02-11 12:49:21,269:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distance, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:21,269:INFO:Checking exceptions
+2022-02-11 12:49:21,270:INFO:Preparing display monitor
+2022-02-11 12:49:21,280:INFO:Preloading libraries
+2022-02-11 12:49:21,282:INFO:Copying training dataset
+2022-02-11 12:49:21,283:INFO:Plot type: distance
+2022-02-11 12:49:21,313:INFO:Fitting Model
+2022-02-11 12:49:21,514:INFO:Visual Rendered Successfully
+2022-02-11 12:49:21,627:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:21,658:INFO:Initializing plot_model()
+2022-02-11 12:49:21,658:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:21,658:INFO:Checking exceptions
+2022-02-11 12:49:21,659:INFO:Preparing display monitor
+2022-02-11 12:49:21,666:INFO:Preloading libraries
+2022-02-11 12:49:21,668:INFO:Copying training dataset
+2022-02-11 12:49:21,669:INFO:Plot type: distribution
+2022-02-11 12:49:21,671:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:49:21,674:INFO:Initializing assign_model()
+2022-02-11 12:49:21,674:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:49:21,674:INFO:Checking exceptions
+2022-02-11 12:49:21,675:INFO:Determining Trained Model
+2022-02-11 12:49:21,676:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:49:21,677:INFO:Copying data
+2022-02-11 12:49:21,681:INFO:(2897, 6)
+2022-02-11 12:49:21,681:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:49:21,684:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:49:21,685:INFO:Sorting dataframe
+2022-02-11 12:49:21,693:INFO:Rendering Visual
+2022-02-11 12:49:21,863:INFO:Visual Rendered Successfully
+2022-02-11 12:49:21,974:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:22,214:INFO:Initializing plot_model()
+2022-02-11 12:49:22,214:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=frequency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:22,215:INFO:Checking exceptions
+2022-02-11 12:49:22,216:INFO:Preparing display monitor
+2022-02-11 12:49:22,225:INFO:Preloading libraries
+2022-02-11 12:49:22,227:INFO:Copying training dataset
+2022-02-11 12:49:22,227:INFO:Plot type: distribution
+2022-02-11 12:49:22,229:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:49:22,231:INFO:Initializing assign_model()
+2022-02-11 12:49:22,232:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:49:22,232:INFO:Checking exceptions
+2022-02-11 12:49:22,233:INFO:Determining Trained Model
+2022-02-11 12:49:22,233:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:49:22,234:INFO:Copying data
+2022-02-11 12:49:22,237:INFO:(2897, 6)
+2022-02-11 12:49:22,238:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:49:22,239:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:49:22,240:INFO:Sorting dataframe
+2022-02-11 12:49:22,250:INFO:Rendering Visual
+2022-02-11 12:49:22,436:INFO:Visual Rendered Successfully
+2022-02-11 12:49:22,550:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:22,582:INFO:Initializing plot_model()
+2022-02-11 12:49:22,583:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=recency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:49:22,583:INFO:Checking exceptions
+2022-02-11 12:49:22,584:INFO:Preparing display monitor
+2022-02-11 12:49:22,595:INFO:Preloading libraries
+2022-02-11 12:49:22,597:INFO:Copying training dataset
+2022-02-11 12:49:22,597:INFO:Plot type: distribution
+2022-02-11 12:49:22,600:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:49:22,602:INFO:Initializing assign_model()
+2022-02-11 12:49:22,602:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:49:22,602:INFO:Checking exceptions
+2022-02-11 12:49:22,603:INFO:Determining Trained Model
+2022-02-11 12:49:22,604:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:49:22,605:INFO:Copying data
+2022-02-11 12:49:22,608:INFO:(2897, 6)
+2022-02-11 12:49:22,609:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:49:22,610:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:49:22,610:INFO:Sorting dataframe
+2022-02-11 12:49:22,619:INFO:Rendering Visual
+2022-02-11 12:49:22,798:INFO:Visual Rendered Successfully
+2022-02-11 12:49:22,916:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:49:22,991:INFO:Initializing predict_model()
+2022-02-11 12:49:22,992:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:58:47,376:INFO:PyCaret Supervised Module
+2022-02-11 12:58:47,377:INFO:ML Usecase: clustering
+2022-02-11 12:58:47,377:INFO:version 2.3.6
+2022-02-11 12:58:47,377:INFO:Initializing setup()
+2022-02-11 12:58:47,377:INFO:setup(target=None, ml_usecase=clustering, available_plots={'cluster': 'Cluster PCA Plot (2d)', 'tsne': 'Cluster TSnE (3d)', 'elbow': 'Elbow', 'silhouette': 'Silhouette', 'distance': 'Distance', 'distribution': 'Distribution'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=mode, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=['item', 'frequency', 'recency'], normalize=True, normalize_method=minmax, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=False, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=17, log_experiment=False, experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-02-11 12:58:47,378:INFO:Checking environment
+2022-02-11 12:58:47,378:INFO:python_version: 3.8.12
+2022-02-11 12:58:47,378:INFO:python_build: ('default', 'Oct 12 2021 03:01:40')
+2022-02-11 12:58:47,379:INFO:machine: AMD64
+2022-02-11 12:58:47,380:INFO:platform: Windows-10-10.0.18363-SP0
+2022-02-11 12:58:47,383:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging.
+2022-02-11 12:58:47,383:INFO:Checking libraries
+2022-02-11 12:58:47,384:INFO:pd==1.3.4
+2022-02-11 12:58:47,384:INFO:numpy==1.19.5
+2022-02-11 12:58:47,385:INFO:sklearn==0.23.2
+2022-02-11 12:58:47,386:INFO:lightgbm==3.3.2
+2022-02-11 12:58:47,388:WARNING:catboost not found
+2022-02-11 12:58:47,390:WARNING:xgboost not found
+2022-02-11 12:58:48,048:INFO:mlflow==1.23.0
+2022-02-11 12:58:48,052:INFO:Checking Exceptions
+2022-02-11 12:58:48,052:INFO:Declaring global variables
+2022-02-11 12:58:48,052:INFO:USI: 4b45
+2022-02-11 12:58:48,052:INFO:pycaret_globals: {'create_model_container', 'n_jobs_param', 'transform_target_method_param', 'USI', 'imputation_regressor', 'fold_param', 'seed', 'fold_generator', 'master_model_container', 'stratify_param', '_all_models_internal', 'pycaret_globals', 'fold_shuffle_param', '_ml_usecase', 'fix_imbalance_method_param', 'logging_param', 'data_before_preprocess', 'target_param', '_all_models', '_internal_pipeline', 'display_container', 'iterative_imputation_iters_param', 'X', 'fold_groups_param', '_gpu_n_jobs_param', 'fold_groups_param_full', 'imputation_classifier', 'prep_pipe', 'html_param', 'log_plots_param', 'transform_target_param', 'gpu_param', '_available_plots', 'experiment__', '_all_metrics', 'exp_name_log', 'fix_imbalance_param'}
+2022-02-11 12:58:48,052:INFO:Preparing display monitor
+2022-02-11 12:58:48,052:INFO:Preparing display monitor
+2022-02-11 12:58:48,063:INFO:Importing libraries
+2022-02-11 12:58:48,063:INFO:Copying data for preprocessing
+2022-02-11 12:58:48,070:INFO:Declaring preprocessing parameters
+2022-02-11 12:58:48,072:INFO:Creating preprocessing pipeline
+2022-02-11 12:58:48,077:INFO:Preprocessing pipeline created successfully
+2022-02-11 12:58:48,078:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-02-11 12:58:48,078:INFO:Creating global containers
+2022-02-11 12:58:48,080:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-02-11 12:58:49,463:INFO:Creating grid variables
+2022-02-11 12:58:49,476:INFO:create_model_container: 0
+2022-02-11 12:58:49,477:INFO:master_model_container: 0
+2022-02-11 12:58:49,477:INFO:display_container: 1
+2022-02-11 12:58:49,482:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-02-11 12:58:49,482:INFO:setup() succesfully completed......................................
+2022-02-11 12:58:49,594:INFO:Initializing create_model()
+2022-02-11 12:58:49,594:INFO:create_model(estimator=kmeans, num_clusters=5, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2022-02-11 12:58:49,595:INFO:Checking exceptions
+2022-02-11 12:58:49,595:INFO:Preparing display monitor
+2022-02-11 12:58:49,615:INFO:Importing libraries
+2022-02-11 12:58:49,627:INFO:Importing untrained model
+2022-02-11 12:58:49,638:INFO:K-Means Clustering Imported succesfully
+2022-02-11 12:58:49,649:INFO:Fitting Model
+2022-02-11 12:58:50,009:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 12:58:50,009:INFO:create_models() succesfully completed......................................
+2022-02-11 12:58:50,011:INFO:Uploading results into container
+2022-02-11 12:58:50,016:INFO:Uploading model into container now
+2022-02-11 12:58:50,022:INFO:create_model_container: 1
+2022-02-11 12:58:50,023:INFO:master_model_container: 1
+2022-02-11 12:58:50,023:INFO:display_container: 2
+2022-02-11 12:58:50,024:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 12:58:50,025:INFO:create_model() succesfully completed......................................
+2022-02-11 12:58:50,121:INFO:Initializing assign_model()
+2022-02-11 12:58:50,121:INFO:assign_model(model=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), transformation=False, score=True, verbose=True)
+2022-02-11 12:58:50,121:INFO:Checking exceptions
+2022-02-11 12:58:50,122:INFO:Determining Trained Model
+2022-02-11 12:58:50,122:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:58:50,123:INFO:Copying data
+2022-02-11 12:58:50,125:INFO:(2897, 6)
+2022-02-11 12:58:50,125:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:58:50,154:INFO:Initializing plot_model()
+2022-02-11 12:58:50,154:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=elbow, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:50,154:INFO:Checking exceptions
+2022-02-11 12:58:50,155:INFO:Preparing display monitor
+2022-02-11 12:58:50,162:INFO:Preloading libraries
+2022-02-11 12:58:50,164:INFO:Copying training dataset
+2022-02-11 12:58:50,164:INFO:Plot type: elbow
+2022-02-11 12:58:50,259:INFO:Fitting Model
+2022-02-11 12:58:52,959:INFO:Visual Rendered Successfully
+2022-02-11 12:58:53,041:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:53,068:INFO:Initializing plot_model()
+2022-02-11 12:58:53,068:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=silhouette, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:53,069:INFO:Checking exceptions
+2022-02-11 12:58:53,070:INFO:Preparing display monitor
+2022-02-11 12:58:53,078:INFO:Preloading libraries
+2022-02-11 12:58:53,081:INFO:Copying training dataset
+2022-02-11 12:58:53,082:INFO:Plot type: silhouette
+2022-02-11 12:58:53,084:INFO:Fitting Model
+2022-02-11 12:58:53,576:INFO:Visual Rendered Successfully
+2022-02-11 12:58:53,652:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:53,683:INFO:Initializing plot_model()
+2022-02-11 12:58:53,684:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=cluster, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:53,684:INFO:Checking exceptions
+2022-02-11 12:58:53,685:INFO:Preparing display monitor
+2022-02-11 12:58:53,692:INFO:Preloading libraries
+2022-02-11 12:58:53,694:INFO:Copying training dataset
+2022-02-11 12:58:53,695:INFO:Plot type: cluster
+2022-02-11 12:58:53,697:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:58:53,699:INFO:Initializing assign_model()
+2022-02-11 12:58:53,699:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=True, score=True, verbose=False)
+2022-02-11 12:58:53,700:INFO:Checking exceptions
+2022-02-11 12:58:53,700:INFO:Determining Trained Model
+2022-02-11 12:58:53,701:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:58:53,702:INFO:Copying data
+2022-02-11 12:58:53,703:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2022-02-11 12:58:53,705:INFO:(2897, 3)
+2022-02-11 12:58:53,706:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:58:53,706:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:58:53,709:INFO:Fitting PCA()
+2022-02-11 12:58:53,712:INFO:Sorting dataframe
+2022-02-11 12:58:53,718:INFO:Rendering Visual
+2022-02-11 12:58:54,738:INFO:Visual Rendered Successfully
+2022-02-11 12:58:54,834:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:54,988:INFO:Initializing plot_model()
+2022-02-11 12:58:54,989:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distance, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:54,989:INFO:Checking exceptions
+2022-02-11 12:58:54,990:INFO:Preparing display monitor
+2022-02-11 12:58:55,000:INFO:Preloading libraries
+2022-02-11 12:58:55,005:INFO:Copying training dataset
+2022-02-11 12:58:55,007:INFO:Plot type: distance
+2022-02-11 12:58:55,053:INFO:Fitting Model
+2022-02-11 12:58:55,274:INFO:Visual Rendered Successfully
+2022-02-11 12:58:55,372:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:55,403:INFO:Initializing plot_model()
+2022-02-11 12:58:55,404:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:55,404:INFO:Checking exceptions
+2022-02-11 12:58:55,405:INFO:Preparing display monitor
+2022-02-11 12:58:55,416:INFO:Preloading libraries
+2022-02-11 12:58:55,417:INFO:Copying training dataset
+2022-02-11 12:58:55,418:INFO:Plot type: distribution
+2022-02-11 12:58:55,420:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:58:55,422:INFO:Initializing assign_model()
+2022-02-11 12:58:55,423:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:58:55,423:INFO:Checking exceptions
+2022-02-11 12:58:55,424:INFO:Determining Trained Model
+2022-02-11 12:58:55,425:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:58:55,425:INFO:Copying data
+2022-02-11 12:58:55,429:INFO:(2897, 6)
+2022-02-11 12:58:55,430:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:58:55,431:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:58:55,431:INFO:Sorting dataframe
+2022-02-11 12:58:55,442:INFO:Rendering Visual
+2022-02-11 12:58:55,698:INFO:Visual Rendered Successfully
+2022-02-11 12:58:55,807:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:56,061:INFO:Initializing plot_model()
+2022-02-11 12:58:56,062:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=frequency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:56,063:INFO:Checking exceptions
+2022-02-11 12:58:56,063:INFO:Preparing display monitor
+2022-02-11 12:58:56,072:INFO:Preloading libraries
+2022-02-11 12:58:56,074:INFO:Copying training dataset
+2022-02-11 12:58:56,075:INFO:Plot type: distribution
+2022-02-11 12:58:56,077:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:58:56,080:INFO:Initializing assign_model()
+2022-02-11 12:58:56,080:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:58:56,080:INFO:Checking exceptions
+2022-02-11 12:58:56,081:INFO:Determining Trained Model
+2022-02-11 12:58:56,082:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:58:56,082:INFO:Copying data
+2022-02-11 12:58:56,086:INFO:(2897, 6)
+2022-02-11 12:58:56,087:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:58:56,087:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:58:56,088:INFO:Sorting dataframe
+2022-02-11 12:58:56,095:INFO:Rendering Visual
+2022-02-11 12:58:56,291:INFO:Visual Rendered Successfully
+2022-02-11 12:58:56,390:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:56,419:INFO:Initializing plot_model()
+2022-02-11 12:58:56,420:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=recency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 12:58:56,420:INFO:Checking exceptions
+2022-02-11 12:58:56,421:INFO:Preparing display monitor
+2022-02-11 12:58:56,432:INFO:Preloading libraries
+2022-02-11 12:58:56,434:INFO:Copying training dataset
+2022-02-11 12:58:56,435:INFO:Plot type: distribution
+2022-02-11 12:58:56,437:INFO:SubProcess assign_model() called ==================================
+2022-02-11 12:58:56,440:INFO:Initializing assign_model()
+2022-02-11 12:58:56,440:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 12:58:56,440:INFO:Checking exceptions
+2022-02-11 12:58:56,441:INFO:Determining Trained Model
+2022-02-11 12:58:56,441:INFO:Trained Model : K-Means Clustering
+2022-02-11 12:58:56,442:INFO:Copying data
+2022-02-11 12:58:56,446:INFO:(2897, 6)
+2022-02-11 12:58:56,446:INFO:assign_model() succesfully completed......................................
+2022-02-11 12:58:56,448:INFO:SubProcess assign_model() end ==================================
+2022-02-11 12:58:56,448:INFO:Sorting dataframe
+2022-02-11 12:58:56,460:INFO:Rendering Visual
+2022-02-11 12:58:56,709:INFO:Visual Rendered Successfully
+2022-02-11 12:58:56,813:INFO:plot_model() succesfully completed......................................
+2022-02-11 12:58:56,869:INFO:Initializing predict_model()
+2022-02-11 12:58:56,869:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:58:57,867:INFO:Initializing save_model()
+2022-02-11 12:58:57,868:INFO:save_model(model=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), model_name=cluster_model_items, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-02-11 12:58:57,868:INFO:Adding model into prep_pipe
+2022-02-11 12:58:57,897:INFO:cluster_model_items.pkl saved in current working directory
+2022-02-11 12:58:57,908:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0)]],
+         verbose=False)
+2022-02-11 12:58:57,909:INFO:save_model() successfully completed......................................
+2022-02-11 12:58:59,549:INFO:Initializing predict_model()
+2022-02-11 12:58:59,549:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:01,162:INFO:Initializing predict_model()
+2022-02-11 12:59:01,162:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:03,358:INFO:Initializing predict_model()
+2022-02-11 12:59:03,358:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:05,443:INFO:Initializing predict_model()
+2022-02-11 12:59:05,444:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:07,225:INFO:Initializing predict_model()
+2022-02-11 12:59:07,225:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:09,146:INFO:Initializing predict_model()
+2022-02-11 12:59:09,147:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:11,057:INFO:Initializing predict_model()
+2022-02-11 12:59:11,058:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:12,973:INFO:Initializing predict_model()
+2022-02-11 12:59:12,974:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 12:59:15,040:INFO:Initializing predict_model()
+2022-02-11 12:59:15,040:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:33,856:INFO:PyCaret Supervised Module
+2022-02-11 13:03:33,857:INFO:ML Usecase: clustering
+2022-02-11 13:03:33,857:INFO:version 2.3.6
+2022-02-11 13:03:33,857:INFO:Initializing setup()
+2022-02-11 13:03:33,858:INFO:setup(target=None, ml_usecase=clustering, available_plots={'cluster': 'Cluster PCA Plot (2d)', 'tsne': 'Cluster TSnE (3d)', 'elbow': 'Elbow', 'silhouette': 'Silhouette', 'distance': 'Distance', 'distribution': 'Distribution'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=mode, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=None, numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=['item', 'frequency', 'recency'], normalize=True, normalize_method=minmax, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=False, combine_rare_levels=False, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=False, multicollinearity_threshold=0.9, remove_perfect_collinearity=False, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=False, transform_target_method=box-cox, data_split_shuffle=False, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=17, log_experiment=False, experiment_name=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-02-11 13:03:33,858:INFO:Checking environment
+2022-02-11 13:03:33,858:INFO:python_version: 3.8.12
+2022-02-11 13:03:33,858:INFO:python_build: ('default', 'Oct 12 2021 03:01:40')
+2022-02-11 13:03:33,858:INFO:machine: AMD64
+2022-02-11 13:03:33,858:INFO:platform: Windows-10-10.0.18363-SP0
+2022-02-11 13:03:33,860:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging.
+2022-02-11 13:03:33,860:INFO:Checking libraries
+2022-02-11 13:03:33,861:INFO:pd==1.3.4
+2022-02-11 13:03:33,861:INFO:numpy==1.19.5
+2022-02-11 13:03:33,861:INFO:sklearn==0.23.2
+2022-02-11 13:03:33,862:INFO:lightgbm==3.3.2
+2022-02-11 13:03:33,865:WARNING:catboost not found
+2022-02-11 13:03:33,867:WARNING:xgboost not found
+2022-02-11 13:03:34,495:INFO:mlflow==1.23.0
+2022-02-11 13:03:34,498:INFO:Checking Exceptions
+2022-02-11 13:03:34,498:INFO:Declaring global variables
+2022-02-11 13:03:34,498:INFO:USI: 2dfb
+2022-02-11 13:03:34,499:INFO:pycaret_globals: {'_all_metrics', 'transform_target_method_param', 'data_before_preprocess', '_available_plots', 'imputation_regressor', 'master_model_container', 'fold_groups_param_full', '_internal_pipeline', 'create_model_container', 'display_container', 'target_param', '_all_models_internal', 'iterative_imputation_iters_param', 'fold_generator', 'fix_imbalance_param', 'logging_param', 'n_jobs_param', 'experiment__', 'stratify_param', 'seed', '_gpu_n_jobs_param', 'log_plots_param', 'html_param', '_all_models', 'fix_imbalance_method_param', 'fold_groups_param', '_ml_usecase', 'transform_target_param', 'USI', 'X', 'prep_pipe', 'fold_shuffle_param', 'gpu_param', 'exp_name_log', 'fold_param', 'pycaret_globals', 'imputation_classifier'}
+2022-02-11 13:03:34,499:INFO:Preparing display monitor
+2022-02-11 13:03:34,499:INFO:Preparing display monitor
+2022-02-11 13:03:34,512:INFO:Importing libraries
+2022-02-11 13:03:34,512:INFO:Copying data for preprocessing
+2022-02-11 13:03:34,518:INFO:Declaring preprocessing parameters
+2022-02-11 13:03:34,521:INFO:Creating preprocessing pipeline
+2022-02-11 13:03:34,527:INFO:Preprocessing pipeline created successfully
+2022-02-11 13:03:34,528:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-02-11 13:03:34,528:INFO:Creating global containers
+2022-02-11 13:03:34,529:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-02-11 13:03:35,934:INFO:Creating grid variables
+2022-02-11 13:03:35,954:INFO:create_model_container: 0
+2022-02-11 13:03:35,959:INFO:master_model_container: 0
+2022-02-11 13:03:35,960:INFO:display_container: 1
+2022-02-11 13:03:35,969:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-02-11 13:03:35,970:INFO:setup() succesfully completed......................................
+2022-02-11 13:03:36,121:INFO:Initializing create_model()
+2022-02-11 13:03:36,121:INFO:create_model(estimator=kmeans, num_clusters=5, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2022-02-11 13:03:36,122:INFO:Checking exceptions
+2022-02-11 13:03:36,122:INFO:Preparing display monitor
+2022-02-11 13:03:36,140:INFO:Importing libraries
+2022-02-11 13:03:36,148:INFO:Importing untrained model
+2022-02-11 13:03:36,156:INFO:K-Means Clustering Imported succesfully
+2022-02-11 13:03:36,168:INFO:Fitting Model
+2022-02-11 13:03:36,552:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 13:03:36,552:INFO:create_models() succesfully completed......................................
+2022-02-11 13:03:36,554:INFO:Uploading results into container
+2022-02-11 13:03:36,559:INFO:Uploading model into container now
+2022-02-11 13:03:36,566:INFO:create_model_container: 1
+2022-02-11 13:03:36,566:INFO:master_model_container: 1
+2022-02-11 13:03:36,567:INFO:display_container: 2
+2022-02-11 13:03:36,568:INFO:KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0)
+2022-02-11 13:03:36,568:INFO:create_model() succesfully completed......................................
+2022-02-11 13:03:36,694:INFO:Initializing assign_model()
+2022-02-11 13:03:36,694:INFO:assign_model(model=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), transformation=False, score=True, verbose=True)
+2022-02-11 13:03:36,694:INFO:Checking exceptions
+2022-02-11 13:03:36,695:INFO:Determining Trained Model
+2022-02-11 13:03:36,695:INFO:Trained Model : K-Means Clustering
+2022-02-11 13:03:36,696:INFO:Copying data
+2022-02-11 13:03:36,700:INFO:(2897, 6)
+2022-02-11 13:03:36,700:INFO:assign_model() succesfully completed......................................
+2022-02-11 13:03:36,735:INFO:Initializing plot_model()
+2022-02-11 13:03:36,736:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=elbow, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:36,736:INFO:Checking exceptions
+2022-02-11 13:03:36,737:INFO:Preparing display monitor
+2022-02-11 13:03:36,746:INFO:Preloading libraries
+2022-02-11 13:03:36,748:INFO:Copying training dataset
+2022-02-11 13:03:36,749:INFO:Plot type: elbow
+2022-02-11 13:03:36,940:INFO:Fitting Model
+2022-02-11 13:03:39,470:INFO:Visual Rendered Successfully
+2022-02-11 13:03:39,559:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:39,589:INFO:Initializing plot_model()
+2022-02-11 13:03:39,589:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=silhouette, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:39,590:INFO:Checking exceptions
+2022-02-11 13:03:39,591:INFO:Preparing display monitor
+2022-02-11 13:03:39,599:INFO:Preloading libraries
+2022-02-11 13:03:39,601:INFO:Copying training dataset
+2022-02-11 13:03:39,602:INFO:Plot type: silhouette
+2022-02-11 13:03:39,604:INFO:Fitting Model
+2022-02-11 13:03:40,089:INFO:Visual Rendered Successfully
+2022-02-11 13:03:40,171:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:40,205:INFO:Initializing plot_model()
+2022-02-11 13:03:40,206:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=cluster, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:40,206:INFO:Checking exceptions
+2022-02-11 13:03:40,207:INFO:Preparing display monitor
+2022-02-11 13:03:40,214:INFO:Preloading libraries
+2022-02-11 13:03:40,216:INFO:Copying training dataset
+2022-02-11 13:03:40,216:INFO:Plot type: cluster
+2022-02-11 13:03:40,218:INFO:SubProcess assign_model() called ==================================
+2022-02-11 13:03:40,221:INFO:Initializing assign_model()
+2022-02-11 13:03:40,221:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=True, score=True, verbose=False)
+2022-02-11 13:03:40,221:INFO:Checking exceptions
+2022-02-11 13:03:40,222:INFO:Determining Trained Model
+2022-02-11 13:03:40,223:INFO:Trained Model : K-Means Clustering
+2022-02-11 13:03:40,223:INFO:Copying data
+2022-02-11 13:03:40,224:INFO:Transformation param set to True. Assigned clusters are attached on transformed dataset.
+2022-02-11 13:03:40,226:INFO:(2897, 3)
+2022-02-11 13:03:40,227:INFO:assign_model() succesfully completed......................................
+2022-02-11 13:03:40,227:INFO:SubProcess assign_model() end ==================================
+2022-02-11 13:03:40,231:INFO:Fitting PCA()
+2022-02-11 13:03:40,234:INFO:Sorting dataframe
+2022-02-11 13:03:40,241:INFO:Rendering Visual
+2022-02-11 13:03:41,224:INFO:Visual Rendered Successfully
+2022-02-11 13:03:41,324:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:41,484:INFO:Initializing plot_model()
+2022-02-11 13:03:41,484:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distance, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:41,485:INFO:Checking exceptions
+2022-02-11 13:03:41,486:INFO:Preparing display monitor
+2022-02-11 13:03:41,495:INFO:Preloading libraries
+2022-02-11 13:03:41,497:INFO:Copying training dataset
+2022-02-11 13:03:41,498:INFO:Plot type: distance
+2022-02-11 13:03:41,532:INFO:Fitting Model
+2022-02-11 13:03:41,736:INFO:Visual Rendered Successfully
+2022-02-11 13:03:41,834:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:41,865:INFO:Initializing plot_model()
+2022-02-11 13:03:41,866:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:41,866:INFO:Checking exceptions
+2022-02-11 13:03:41,867:INFO:Preparing display monitor
+2022-02-11 13:03:41,878:INFO:Preloading libraries
+2022-02-11 13:03:41,880:INFO:Copying training dataset
+2022-02-11 13:03:41,881:INFO:Plot type: distribution
+2022-02-11 13:03:41,883:INFO:SubProcess assign_model() called ==================================
+2022-02-11 13:03:41,885:INFO:Initializing assign_model()
+2022-02-11 13:03:41,886:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 13:03:41,887:INFO:Checking exceptions
+2022-02-11 13:03:41,888:INFO:Determining Trained Model
+2022-02-11 13:03:41,889:INFO:Trained Model : K-Means Clustering
+2022-02-11 13:03:41,889:INFO:Copying data
+2022-02-11 13:03:41,892:INFO:(2897, 6)
+2022-02-11 13:03:41,893:INFO:assign_model() succesfully completed......................................
+2022-02-11 13:03:41,894:INFO:SubProcess assign_model() end ==================================
+2022-02-11 13:03:41,894:INFO:Sorting dataframe
+2022-02-11 13:03:41,906:INFO:Rendering Visual
+2022-02-11 13:03:42,132:INFO:Visual Rendered Successfully
+2022-02-11 13:03:42,234:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:42,464:INFO:Initializing plot_model()
+2022-02-11 13:03:42,464:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=frequency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:42,465:INFO:Checking exceptions
+2022-02-11 13:03:42,466:INFO:Preparing display monitor
+2022-02-11 13:03:42,476:INFO:Preloading libraries
+2022-02-11 13:03:42,478:INFO:Copying training dataset
+2022-02-11 13:03:42,479:INFO:Plot type: distribution
+2022-02-11 13:03:42,481:INFO:SubProcess assign_model() called ==================================
+2022-02-11 13:03:42,485:INFO:Initializing assign_model()
+2022-02-11 13:03:42,485:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 13:03:42,485:INFO:Checking exceptions
+2022-02-11 13:03:42,486:INFO:Determining Trained Model
+2022-02-11 13:03:42,488:INFO:Trained Model : K-Means Clustering
+2022-02-11 13:03:42,489:INFO:Copying data
+2022-02-11 13:03:42,492:INFO:(2897, 6)
+2022-02-11 13:03:42,493:INFO:assign_model() succesfully completed......................................
+2022-02-11 13:03:42,494:INFO:SubProcess assign_model() end ==================================
+2022-02-11 13:03:42,494:INFO:Sorting dataframe
+2022-02-11 13:03:42,504:INFO:Rendering Visual
+2022-02-11 13:03:42,691:INFO:Visual Rendered Successfully
+2022-02-11 13:03:42,790:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:42,817:INFO:Initializing plot_model()
+2022-02-11 13:03:42,818:INFO:plot_model(fold=None, use_train_data=False, verbose=True, is_in_evaluate=False, display=None, display_format=None, estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), feature_name=recency, fit_kwargs=None, groups=None, label=False, plot=distribution, plot_kwargs=None, save=False, scale=1, system=True)
+2022-02-11 13:03:42,819:INFO:Checking exceptions
+2022-02-11 13:03:42,819:INFO:Preparing display monitor
+2022-02-11 13:03:42,828:INFO:Preloading libraries
+2022-02-11 13:03:42,830:INFO:Copying training dataset
+2022-02-11 13:03:42,831:INFO:Plot type: distribution
+2022-02-11 13:03:42,832:INFO:SubProcess assign_model() called ==================================
+2022-02-11 13:03:42,835:INFO:Initializing assign_model()
+2022-02-11 13:03:42,835:INFO:assign_model(model=Pipeline(memory=None,
+         steps=[('empty_step', 'passthrough'),
+                ('actual_estimator',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0))],
+         verbose=False), transformation=False, score=True, verbose=False)
+2022-02-11 13:03:42,836:INFO:Checking exceptions
+2022-02-11 13:03:42,837:INFO:Determining Trained Model
+2022-02-11 13:03:42,838:INFO:Trained Model : K-Means Clustering
+2022-02-11 13:03:42,839:INFO:Copying data
+2022-02-11 13:03:42,842:INFO:(2897, 6)
+2022-02-11 13:03:42,843:INFO:assign_model() succesfully completed......................................
+2022-02-11 13:03:42,844:INFO:SubProcess assign_model() end ==================================
+2022-02-11 13:03:42,845:INFO:Sorting dataframe
+2022-02-11 13:03:42,855:INFO:Rendering Visual
+2022-02-11 13:03:43,007:INFO:Visual Rendered Successfully
+2022-02-11 13:03:43,115:INFO:plot_model() succesfully completed......................................
+2022-02-11 13:03:43,181:INFO:Initializing predict_model()
+2022-02-11 13:03:43,181:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:43,432:INFO:Initializing save_model()
+2022-02-11 13:03:43,432:INFO:save_model(model=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), model_name=cluster_model_items, prep_pipe_=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('P_transform', 'passthrough'), ('binn', 'passthrough'),
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='UNSUPERVISED_DUMMY_TARGET')),
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False), verbose=True, kwargs={})
+2022-02-11 13:03:43,433:INFO:Adding model into prep_pipe
+2022-02-11 13:03:43,457:INFO:cluster_model_items.pkl saved in current working directory
+2022-02-11 13:03:43,464:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True,
+                                      features_todrop=['item', 'frequency',
+                                                       'recency'],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[],
+                                      target='UNSUPERVISED_DUMMY_TARGET',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='most frequent',
+                                fill_value_categorical=No...
+                ('fix_perfect', 'passthrough'),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 KMeans(algorithm='auto', copy_x=True, init='k-means++',
+                        max_iter=300, n_clusters=5, n_init=10, n_jobs=-1,
+                        precompute_distances='deprecated', random_state=17,
+                        tol=0.0001, verbose=0)]],
+         verbose=False)
+2022-02-11 13:03:43,465:INFO:save_model() successfully completed......................................
+2022-02-11 13:03:46,585:INFO:Initializing predict_model()
+2022-02-11 13:03:46,585:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:48,173:INFO:Initializing predict_model()
+2022-02-11 13:03:48,173:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:50,392:INFO:Initializing predict_model()
+2022-02-11 13:03:50,393:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:52,502:INFO:Initializing predict_model()
+2022-02-11 13:03:52,503:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:54,414:INFO:Initializing predict_model()
+2022-02-11 13:03:54,415:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:56,297:INFO:Initializing predict_model()
+2022-02-11 13:03:56,298:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:03:58,060:INFO:Initializing predict_model()
+2022-02-11 13:03:58,060:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:04:00,542:INFO:Initializing predict_model()
+2022-02-11 13:04:00,542:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
+2022-02-11 13:04:02,423:INFO:Initializing predict_model()
+2022-02-11 13:04:02,424:INFO:predict_model(estimator=KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
+       n_clusters=5, n_init=10, n_jobs=-1, precompute_distances='deprecated',
+       random_state=17, tol=0.0001, verbose=0), ml_usecase=MLUsecase.CLUSTERING)
