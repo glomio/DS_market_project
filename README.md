@@ -22,9 +22,11 @@ The project is stored in:
 
 Python version 3.8
 
-All packages in the used environment are reported in the file:
+All packages in the used environment are reported in the files:
 
-    requirements.txt
+    requirements_1.txt requirements_2.txt requirements_3.txt
+
+There is a requirement file for each subproject.
 
 # Part 1: Business Analysis
 In this part we will review all the different business aspects of DS supermaket. This review will be based on unit sales as well as unit revenue
