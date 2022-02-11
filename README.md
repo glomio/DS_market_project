@@ -8,7 +8,7 @@ This project consist on 4 parts working on the DS_MARKET data.
 - Business Analysis
 - Items clustering
 - Product sales predictions
-- MLOps plan
+- MLOps plan for a store supply use case
 
 # Installation
 
@@ -67,9 +67,30 @@ The cluster identified can be interpreted as follow:
 
 * For this part we need to run the dollar value table again in order to have all the requiered csv file to run the notebook. Once the dollar csv is obtained, we need to take the apropriate store cluster to be predicted from part 2 (Tribeca in this case). 
 
-* Then we will need to create a list of dataframes with data to be fitted in the model, with the help of the function prophet_df(dataframe, item_select). Note item_selected is a list of products to be selected within a df, if we want to selct the items just set items_selected = df.id.unique().index to get the index of all the products in the df.
+* Then we will need to create a list of dataframes with data to be fitted in the model, with the help of the function prophet_df(dataframe, item_select). Note item_selected is a list of products to be selected within a df, if we want to select all the items just set items_selected = df.id.unique().index to get the index of all the products in the df.
 
 * Then use the Hypermameter loop to find the best parameters for the cluster
 
 * Finally generate a model and predict the units sold of each product with the mapping of the run_prophet() function. The model with automatically be saved for future use.
 =======
+
+# Part 4: MLOps plan for a store supply use case
+
+Models are to branch out into multiple workstreams, the main workstream is the Store replenishment use case. 
+Standard Product management cycles will be observed through to deployment and monitoring until closure of project. 
+Standard Scrum management process will be deployed within the management of sprints.  
+Kanban boards will be used to manage tasks using tools such as Trello or java to manage backlog.
+
+<img src='./ds_market.png' align='center' width = '100'>
+
+Data sources input from SAP and Salesforce relating to sales, events and prices. 
+Data engineering and coding will be occurring through VS Studio
+Git being the repository and collaboration venue
+ML Ops is to be determined- in diagram; we are looking at azure.
+Api to connect prediction models to SAP Material Management system to trigger workflows and business rules that would initiate automation.
+Slack will be used as an approval workflow tool and a communication medium
+SAP FSCM Module will once again be consulted to trigger automated Purchase orders and payment approvals
+This would lead back to SAP material Management to update stock 
+Tableau will be used as dashboards to measure business evaluation KPIs
+Automated reports will be made available through outlook. Governance triggers will be also sent through Outlook and Slack. 
+Tabpy will be used to link VS Studio and Python if MLOps tool has limitations on Business reporting data
