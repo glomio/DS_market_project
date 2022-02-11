@@ -95,4 +95,4 @@ Tableau will be used as dashboards to measure business evaluation KPIs
 Automated reports will be made available through outlook. Governance triggers will be also sent through Outlook and Slack. 
 Tabpy will be used to link VS Studio and Python if MLOps tool has limitations on Business reporting data
 
-<img src='./4_MLOps_plan/store_replanishment_workstream_MLOps.png' align='center' width = '500'>
+<img src='./4_MLOps_plan/store_replanishment_workstream_MLOps.png' align='center' width = '1000'>
